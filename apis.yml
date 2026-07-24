@@ -1,8 +1,18 @@
 aid: carefull-corporation
 name: Carefull Corporation
-description: 'Carefull Corporation is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Carefull is a financial safety platform that protects the personal finances
+  of older adults and their family caregivers from fraud, scams, and identity theft.
+  It monitors bank accounts, credit cards, and investment accounts across 12,000+ financial
+  institutions (via Plaid, MX, and Finicity) to detect suspicious activity, duplicate
+  billing, and unusual withdrawals in real time. The service bundles $1M identity theft
+  insurance, dark web and credit-file monitoring, home-title monitoring, a ScamCheck
+  message tool, a secure document Vault and LegacyKit, and view-only access for trusted
+  contacts. Carefull is offered direct to consumers (about $29.99/month with a free
+  trial) and B2B to banks, credit unions, wealth advisory firms, and employers. It is
+  SOC 2 certified. The company is backed by Bessemer Venture Partners. This API Evangelist
+  profile enriches the company as a network lead; Carefull publishes no public developer
+  API, OpenAPI, or /.well-known discovery surface (all /.well-known/* paths return the
+  SPA HTML shell).'
 url: https://raw.githubusercontent.com/api-evangelist/carefull-corporation/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,31 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
+image: https://getcarefull.com/assets/img/og/default.jpg
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Fintech
+- Financial Safety
+- Fraud Detection
+- Identity Theft Protection
+- Elder Care
+- Financial Caregiving
+- Account Monitoring
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carefull-corporation-domain-security.yml
+- type: TrustCenter
+  url: security/carefull-corporation-trust-center.yml
+- type: Compliance
+  url: https://getcarefull.com/security-practices
 - type: Website
   url: https://getcarefull.com/
+- type: Blog
+  url: https://getcarefull.com/takecare
+- type: TermsOfService
+  url: https://getcarefull.com/terms
+- type: PrivacyPolicy
+  url: https://getcarefull.com/privacy
+- type: SignUp
+  url: https://secure.getcarefull.com/signUp
+- type: Login
+  url: https://secure.getcarefull.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

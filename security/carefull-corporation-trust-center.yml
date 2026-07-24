@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://getcarefull.com/security-practices
+url: https://getcarefull.com/security-practices
+certifications:
+- SOC 2
+evidence:
+- source: https://getcarefull.com/security-practices
+  detail: 'Carefull states it is the first financial caregiving service to receive
+    its SOC 2 certification; independently audited with an unqualified (clean) opinion,
+    zero exceptions. SOC 2 report available on request via care@getcarefull.com.'
+security_posture:
+  encryption_at_rest: AES-256 (per-object keys) for the Carefull Vault
+  encryption_in_transit: TLS with HSTS
+  tokenization: proprietary aliasing system removes sensitive data from core systems
+  data_separation: personal and financial transaction data held in separate databases
+  hosting: AWS across at least three separate geographic locations
+  credentials: banking credentials never stored; view-only aggregation via Plaid, MX, and Finicity
+  ssn_protection: partners with Iris and Equifax; SSN never stored with account data
+contact: care@getcarefull.com
+notes: No public bug bounty, responsible-disclosure policy, /.well-known/security.txt, or security@ address was found (all /.well-known/* paths return the SPA HTML shell, i.e. soft-404).
