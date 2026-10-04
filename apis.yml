@@ -1,5 +1,5 @@
 aid: carefull-corporation
-name: Carefull Corporation
+name: Carefull
 description: 'Carefull is a financial safety platform that protects the personal finances
   of older adults and their family caregivers from fraud, scams, and identity theft.
   It monitors bank accounts, credit cards, and investment accounts across 12,000+ financial
@@ -50,6 +50,16 @@ tags:
 - Company
 - Fintech
 - Financial Safety
+- Fraud Prevention
+- Identity Theft Protection
+- Elder Care
+- Financial Caregiving
+- Account Monitoring
+- Consumer Finance
+tags_raw:
+- Company
+- Fintech
+- Financial Safety
 - Fraud Detection
 - Identity Theft Protection
 - Elder Care
@@ -86,3 +96,4 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-legal-name: Carefull Corporation
